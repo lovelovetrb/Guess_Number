@@ -4,7 +4,7 @@ public class Guess_Number{
   public static void main(String[] args) {
 
     //必要な変数の定義
-    int[] answer = {5,2,9,1};   //答えを配列にて定義
+    int[] answer = {5,2,9};   //答えを配列にて定義
     int[] input = new int[answer.length]; //入力された結果は配列で受け取る
     int round = 1;
     String judg = "";
