@@ -17,17 +17,17 @@ Please enter "java Guess_Number" in the terminal
  
 # Note
  
-~Rules~
-This is a game of guessing three-digit numbers.
-Enter the hundredth place, the tenth place, and the first place in that order.
-The number for each place is different.
-When you reach the end
-
-*Hit the number of digits that match both the location and the number.
-*blow the number of numbers that are in the same place but in different places
-
-for numbers with the same location and number.
-Enter the answer number based on these indications.
+☆Rules
+This is a game of guessing three-digit numbers.　　
+Enter the hundredth place, the tenth place, and the first place in that order.　　
+The number for each place is different.　　
+When you reach the end　　
+　　
+*Hit the number of digits that match both the location and the number.　　
+*blow the number of numbers that are in the same place but in different places　　
+　　
+for numbers with the same location and number.　　
+Enter the answer number based on these indications.　　
 
  
 # Author
