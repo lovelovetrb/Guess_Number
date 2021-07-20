@@ -5,7 +5,7 @@ This code is "This code is a number guessing game written in java."
  
 # Requirement
  ```
-The java environment.
+The Java environment.
  ```
  
 # Usage
