@@ -37,44 +37,44 @@ public class Guess_Number{
       }
     }
 
-  while(judg.equals("start")){  //回答入力処理
-    System.out.println();
-    System.out.println( "----- ラウンド " + round + " -----" );
-    for(int i = 0; i < answer.length ; i++){
-     System.out.print( i+1 + "回目の入力です -> ");
-     try {
-         input[i] = Integer.parseInt(br.readLine()); //次の行の入力を検知して数字の型に変換
-     } catch (Exception e) {
-         System.err.println("もう一度入力してください");
-     }
-   }
-   //答え判定
-   int hit = 0; //変数の初期化
-   int blow = 0;
-
-   for(int i = 0; i < answer.length ; i++){//hitの判定処理
-       if(input[i] == answer[i]){
-         hit++;
-       }
-     }
-
-    for(int i = 0; i < answer.length ; i++){//blowの判定処理
-      for(int j = 0; j < answer.length ; j++){
-       if(input[i] == answer[j]){
-         blow++;
+    while(judg.equals("start")){  //回答入力処理
+      System.out.println();
+      System.out.println( "----- ラウンド " + round + " -----" );
+      for(int i = 0; i < answer.length ; i++){
+         System.out.print( i+1 + "回目の入力です -> ");
+         try {
+             input[i] = Integer.parseInt(br.readLine()); //次の行の入力を検知して数字の型に変換
+         } catch (Exception e) {
+             System.err.println("もう一度入力してください");
          }
       }
-    }
+     //答え判定
+     int hit = 0; //変数の初期化
+     int blow = 0;
+
+     for(int i = 0; i < answer.length ; i++){//hitの判定処理
+         if(input[i] == answer[i]){
+           hit++;
+          }
+      }
+
+      for(int i = 0; i < answer.length ; i++){//blowの判定処理
+        for(int j = 0; j < answer.length ; j++){
+         if(input[i] == answer[j]){
+           blow++;
+          }
+        }
+      }
      //正誤判定
      if(hit == answer.length){
        System.out.println("おめでとうございます！正解は " + answer[0] + answer[1] + answer[2] + " でした！");
        break;
-     }
+      }
 
      //入力が正解でなかったときの処理
      System.out.println("hit数" + hit); //hit数、blow数を表示
      System.out.println("blow数" + (blow - hit));
      round ++;
-   }
+    }
   }
  }
